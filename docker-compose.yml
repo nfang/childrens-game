@@ -7,6 +7,7 @@ services:
     domainname: api.childrensgame.com
     ports:
       - "6039:6039"
+
   cli:
     build: ChildrensGame.Cli
     container_name: childrensgame_container_cli
@@ -14,3 +15,4 @@ services:
       - "api"
     stdin_open: true
     tty: true
+    command: ["./wait-for-it.sh", "api:6039", "--", "dotnet", "ChildrensGame.Cli.dll"]

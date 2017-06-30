@@ -20,4 +20,4 @@ You need to install the following software to build and run the app:
 
 ### Usage
 
-Execute `./build.sh` to build the app, and `docker-compose up` to run.
+Execute `./start.sh` to build and run the app.
