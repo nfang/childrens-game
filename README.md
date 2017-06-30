@@ -10,3 +10,14 @@
   immediately next to the eliminated one.
 - Children are so removed from the circle one by one. The winner is the last child
   left standing.
+
+### Prerequisites
+
+You need to install the following software to build and run the app:
+
+- [.NET Core runtime](https://www.microsoft.com/net/download/core)
+- [Docker](https://www.docker.com/community-edition)
+
+### Usage
+
+Execute `./build.sh` to build the app, and `docker-compose up` to run.
