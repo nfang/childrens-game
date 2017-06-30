@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  api:
+    build: ChildrensGame.Api
+    container_name: childrensgame_container_api
+    domainname: api.childrensgame.com
+    ports:
+      - "6039:6039"
+  cli:
+    build: ChildrensGame.Cli
+    container_name: childrensgame_container_cli
+    depends_on:
+      - "api"
+    stdin_open: true
+    tty: true
