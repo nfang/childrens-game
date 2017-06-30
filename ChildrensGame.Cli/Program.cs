@@ -1,6 +1,5 @@
 ﻿﻿using System;
 using ChildrensGame.Core;
-using Console = Colorful.Console;
 
 namespace ChildrensGame.Cli
 {
@@ -10,8 +9,6 @@ namespace ChildrensGame.Cli
 
         static async void RunAsync()
         {
-            Console.WriteAscii("CHILDREN'S GAME");
-
             using (var engine = Engine.GetInstance())
             {
                 var game = await engine.CreateGameAsync();
